@@ -1,0 +1,21 @@
+.banner{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/spotyja-9de98.appspot.com/o/disturbedBanner.jpg?alt=media&token=06e2b4f1-03f6-476e-aa72-482481f56b58');
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30%;
+}
+
+.iconos{
+    font-size: 5rem;
+    color: red;
+    position: relative;
+    right: -14rem;    
+}
+
+.conciertos{
+    background-color: black;
+    margin: 1px white solid;
+    color: aliceblue;   
+    width: 25rem;
+}
