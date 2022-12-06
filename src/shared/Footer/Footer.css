@@ -1,4 +1,10 @@
 .fondo{
-    background-color: crimson;
+    background-color: #643F87;
     margin-top: 5em;
+    width: 100%;
 }
+
+.fuente{
+    font-size: 60px;
+}
+

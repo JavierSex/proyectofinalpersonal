@@ -88,21 +88,41 @@ return(
            <div class="container-fluid mt-5">
             <div class="row">
                 
+                <div class="col-12 mt-5">
+                        <h1>NOTICIAS</h1>
+                        <hr/>
+                </div>
+
                 <div class="col-12 col-md-4">
 
                     <img src="https://firebasestorage.googleapis.com/v0/b/spotyja-9de98.appspot.com/o/disturbedNoticia3.jpg?alt=media&token=5c6f3b92-355b-48d5-be6d-875d70e89946" alt="" class="img-fluid w-100"/>
+
+                    <p>
+                    Disturbed ha anunciado un nuevo álbum, Evolution , que saldrá el 19 de octubre a través de Reprise Records. Junto a esto, dieron a conocer el single principal de su nuevo trabajo de estudio,  «Are You Ready», canción que los mismos fanáticos eligieron a través de una encuesta que la banda lanzó la semana pasada donde se le pidió a los oyentes que eligieran entre un single de estilo «heavy» o «balada». Según la banda, el «consenso fue abrumador» de una preferencia por sobre otra. Claramente los fanáticos querían escuchar música más «heavy» primero.
+
+
+                    </p>
 
                 </div>
 
                 <div class="col-12 col-md-4">
 
                     <img src="https://firebasestorage.googleapis.com/v0/b/spotyja-9de98.appspot.com/o/disturbedNoticia2.jpg?alt=media&token=c3ad2685-9673-45c2-ac2c-7a13e10185a7" alt="" class="img-fluid w-100"/>
+                    
+                    <p>
+                    El grupo estadounidense de hard rock, cuyo frontman, David Draiman, es de herencia judía, promovió su debut israelí en vivo en un mensaje de vídeo en hebreo.   Draiman dijo: «Shalom, Somos Disturbed y estaremos en el Live Park de Rishon Lezion el 2 de Julio».   Aunque David ha visitado el país muchas veces, este será el primer concierto Disturbed en el estado judío.     En una entrevista de 2011 con Ynet, Draiman dijo que había querido tocar en Israel toda su vida. «Si Dios quiere que suceda, lo haremos algún día», dijo. «Realmente espero que podamos venir aquí en nuestra próxima gira. Estamos trabajando en eso… Más allá del hecho de que la gente aquí me dice aquí y allá que ama a la banda, creo que estaré convencido cuando pueda finalmente poner un espectáculo y que la gente vaya a vernos. Esa sería la prueba real».   David continuó diciendo que lo que más le gusta de Israel «es el hecho de que es el único lugar donde está bien ser judío. El único lugar donde puedes sentirte orgulloso dondequiera que vayas, tienes a tu gente y tu cultura y no hay nada de miedo», explicó. «Es muy diferente de cómo la mayoría del mundo ve a Israel desde sus pantallas de televisión.
+
+                    </p>
 
                 </div>
 
                 <div class="col-12 col-md-4">
 
                     <img src="https://firebasestorage.googleapis.com/v0/b/spotyja-9de98.appspot.com/o/disturbedNoticia.jpg?alt=media&token=c1d4df7b-f6f9-4906-9af4-54c92e8239e6" alt="" class="img-fluid w-100"/>
+
+                    <p>
+                    La Semana Santa ha sido muy especial para los aficionados al mejor Metal Internacional, debido a que Madrid y Barcelona fueron las ciudades españolas elegidas por DISTURBED para volver a tocar en nuestro país. Los americanos no pisaban estas tierras desde el lejano Festimad de 2003 durante el tour de presentación de "Believe". Por el camino han quedado varias giras abortadas y unos cuantos discos. La ocasión era especial, casi tanto como sus teloneros, los inclasificables SKINDRED, encargados de preparar el ambiente.
+                    </p>
 
                 </div>
             </div>
