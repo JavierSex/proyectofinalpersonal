@@ -1,12 +1,23 @@
 export function Integrantes(){
+
+    let Miembros=[
+        {
+            nombre:"",
+            historia:"",
+            foto:""
+        },
+        
+    ]
+
+
     return(
         <>
-            <div class="row-col-1">
-                <div class="row mt-5">
-                    <div class="col-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/spotyja-9de98.appspot.com/o/DavidDraiman.jpg?alt=media&token=9952f7be-301c-4db3-b51f-ebaac3374247" alt="foto" class="h-100 img-fluid"/>
+            <div className="row-col-1">
+                <div className="row mt-5">
+                    <div className="col-6">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/spotyja-9de98.appspot.com/o/DavidDraiman.jpg?alt=media&token=9952f7be-301c-4db3-b51f-ebaac3374247" alt="foto" className="h-100 img-fluid"/>
                     </div>
-                    <div class="col-6">
+                    <div className="col-6">
                         <h1>David Draiman</h1>
                         <p>
                             Draiman es judío,3​ si bien no es practicante. David Brinn, escribiendo en el Jerusalem Post, lo definió como un "insolente judío". Políticamente, se declara libertarista. Tiene un hermano menor, Benjamin "Ben" Draiman, que hace música folk rock y ambient.
@@ -20,22 +31,22 @@ export function Integrantes(){
                         </p>                        
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-6">
+                <div className="row mt-5">
+                    <div className="col-6">
                         <h1>Dan Donegan</h1>
                         <p>
                             Donegan tenía cabello muy largo durante las tempranas épocas de Brawl y Disturbed. Según el DVD de Disturbed titulado M.O.L., Donegan consiguió un trabajo con su padre en una construcción. Le requirieron cortar su pelo, pero éste optó por usar una peluca para engañar a su padre y guardar su pelo largo. Trabajó, y su padre le dejó usar su pelo largo. Donegan tiene una hija llamada Maya y un hijo nombrado Justin. En el 2008 recibió la guitar world por su excelente crecimiento del álbum Ten Thousand Fists al Indestructible, además como curiosidad es el miembro del grupo más alto, mide 1,87 m                            
                         </p>
                     </div>
-                    <div class="col-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/spotyja-9de98.appspot.com/o/DanDonegan.jpg?alt=media&token=7d53d1ba-a1d3-4f4d-a085-5c21631deb4b" alt="foto" class="h-100 img-fluid"/>
+                    <div className="col-6">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/spotyja-9de98.appspot.com/o/DanDonegan.jpg?alt=media&token=7d53d1ba-a1d3-4f4d-a085-5c21631deb4b" alt="foto" className="h-100 img-fluid"/>
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/spotyja-9de98.appspot.com/o/MikeWengren.jpg?alt=media&token=5eeb10dc-7c12-447d-acf9-72074e384252" alt="foto" class="h-100 img-fluid"/>
+                <div className="row mt-5">
+                    <div className="col-6">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/spotyja-9de98.appspot.com/o/MikeWengren.jpg?alt=media&token=5eeb10dc-7c12-447d-acf9-72074e384252" alt="foto" className="h-100 img-fluid"/>
                     </div>
-                    <div class="col-6">
+                    <div className="col-6">
                         <h1>Mike Wengren</h1>
                         <p>
                             Nacido y criado en el Evergreen Park, Illinois, Wengren empezó tocando la batería a la temprana edad de 10 años, desde la cual estuvo aprendiendo, pero no comenzó a tocar seriamente hasta los 15 años.
@@ -45,8 +56,8 @@ export function Integrantes(){
                         </p>
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-6">
+                <div className="row mt-5">
+                    <div className="col-6">
                         <h1>John Moyer</h1>
                         <p>
                             John Moyer (nacido el 30 de noviembre de 1973) es el bajista actual y el segundo vocalista de Disturbed, sustituyendo al anterior bajista de la mencionada banda, Steve Kmak. Moyer también grabó los discos Ten Thousand Fists en 2005, en 2008 el disco Indestructible, en 2010; Asylum, y en 2015; Immortalized. Ahora se encuentra tocando el bajo en el supergrupo de heavy metal llamado Adrenaline Mob.
@@ -55,8 +66,8 @@ export function Integrantes(){
                             John Moyer tiene una línea de encargo con la compañía de bajos Traben. Él también tiene como costumbre utilizar amplificadores Kustom con su propio diseño impreso en el frente que se asemeja a un cráneo engullido en llamas.
                         </p>
                     </div>
-                    <div class="col-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/spotyja-9de98.appspot.com/o/JohnMoyer.webp?alt=media&token=29c57b01-a2cd-4d0c-9e5d-0322f015b9f3" alt="foto" class="h-100 img-fluid"/>
+                    <div className="col-6">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/spotyja-9de98.appspot.com/o/JohnMoyer.webp?alt=media&token=29c57b01-a2cd-4d0c-9e5d-0322f015b9f3" alt="foto" className="h-100 img-fluid"/>
                     </div>
                 </div>
             </div>

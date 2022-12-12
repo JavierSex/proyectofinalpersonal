@@ -1,6 +1,23 @@
+import "./Mercancia.css"
+
 import {Footer} from "../shared/Footer/Footer"
+import { useNavigate } from "react-router-dom" //aqui tenemos asistencia para el evento que sirve
+//para poder navegar entre componentes
 
 export function Mercancia(){
+
+    //ACTIVAmos la navegacion entre componentes
+    //cuando se de un evento
+    let navegante=useNavigate()    
+    
+    //que hago cuando se de el evento
+    function detectarEvento(productoSeleccionado){
+        
+        navegante("/ampliar",{
+            state:{productoSeleccionado}
+        })
+
+    }
 
     let titulo="Productos de la banda..."
 
@@ -40,27 +57,42 @@ export function Mercancia(){
     return(
         <>
             <h1>{titulo}</h1>
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-5">
+            <div className="container">
+                <div className="row row-cols-1 row-cols-md-3 g-5">
                     
                     {
-                        Productos.map(function(producto){
+                        Productos.map(function(producto,id){//producto es una variable auxiliar
                             return(
-                                <>
-                                    <div class="col">
-                                        <div class="card h-100 shadow w-200">
-                                            <div class="row">
-                                                <img src={producto.foto} alt="foto" class="h-100 img-fluid w-100 text-center"/>
+                                //aqui se crean muchos fragmentos puesto que se esta recorriendo un map
+                                //y el primer caso para el problema del key es cambiar el fragmento a <></> a un div <div><div/>
+                                <div key={id}/**aqui se interpolo lo cual tengo que investigar*/>
+                                    <div className="col">
+
+                                        <div className="card h-100 shadow w-100">
+
+                                            <div className="row text-center h-100 w-100 img-fluid">
+                                                <img src={producto.foto} alt="foto" className="h-100 img-fluid w-100 text-center"/>
                                             </div>
-                                            <div class="row text-center pt-5">
+                                            <div className="row text-center pt-5">
                                                 <h1>{producto.nombre}</h1>    
                                             </div>
-                                            <div class="row text-center pt-5">
+                                            <div className="row text-center pt-5">
                                                 <h3>${producto.precio}$</h3>
                                             </div>
+
+                                            <div className="row text-center pt-5">
+                                                <button className="btn btn-primary mx-5 my-3" onClick={
+                                                        function(){
+                                                            detectarEvento(producto)
+                                                        }
+                                                    } /** a esto se le conoce como callback investigar*/>
+                                                    Ampliar
+                                                </button>
+                                            </div>
+
                                         </div>
                                     </div>
-                                </>
+                                </div>
                             )
                         })
                     }
