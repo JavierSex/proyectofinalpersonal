@@ -23,6 +23,6 @@ export function Rutas(){
               <Route path="/mercancias" element={<Mercancia/>}/>
               <Route path="/ampliar" element={<AmpliarInfo/>}/>
             </Routes>
-        </>//all this are path, rutas.
+        </>//all this are paths, rutas.
     )
 }
