@@ -1,37 +1,61 @@
 import { servicioCancionesTop } from "../services/servicioCanciones"
+import { useState,useEffect } from "react"
+/*
+este es para manejar datos de forma global en el mismo componente en nuestro caso el
+"respuesta" dentro de la funcion anonima
 
+el use effect limita el numero repeticiones, reproducciones etc en un componente.
+*/
 export function Music(){
     
-    servicioCancionesTop()
+    //aqui usamos el hook usestate para almacenar la respuesta
+    //del api de forma global
+    //set es para llevar datos
+    const[canciones,setCanciones]=useState(null)
+    const[estadoCarga,setEstadoCarga]=useState(true)
+    //ejemplo 1: const[usuario,setUsuario]=useState(null)
+    //ejemplo 2: const[serie,setSerie]=useState(null)
 
-    return(
-        /*norma REST es una regla las apis son programas que viven en el backend
-        cuando yo uso una api es porque yo quiero conseguir alguna informacion es decir entrar una BD.
+    //usando el hook useEffect para limitar el consumo
+    //del api a una sola vez
+    useEffect(function(){
 
-            1- la primera regla: para donde vas ? -- URL
+        servicioCancionesTop().then(function(respuesta){
 
-            2- la segunda norma. a que vas ? -- Endpoint
+            setCanciones(respuesta)            
+            setEstadoCarga(false)
 
-            3- que metodo voy a usar o que operacion:
+        })//espera el await y espera el then que es sacar los datos ya en el componente
 
-                *En las Bd se pueden hacer las siguientes acciones las cuales las normalizaron*
+    },[])
+    
+    //render del componente:
+    if(estadoCarga==true){
+        return(
+            <>
+                <h2>
+                    CARGANDO...
+                </h2>
+            </>
+        )
+    }else{
+        return(
+            <>
+                <h2>Canciones de la banda:</h2>
+                {
+                    canciones.tracks.map(function(cancion){
+                        console.log(cancion)
+                        return(
+                            <div>
+                                <h1>{cancion.name}</h1>
+                                <audio controls src={cancion.preview_url}></audio>
+                                <img src={cancion.album.images[0].url}></img>
+                            </div>                                                        
+                        )
+                    })
+                }
+            </>// interpolar para meter js en el html <></>
+        )
+    }
 
-                escribir --> POST
-                leer --> GET
-                editar --> PUT
-                borrar --> DELETE
-
-
-            JSON
-            es el lenguaje normalizador para el consumo de apis
-            y recordemos que las apis SE CONSUMEN EN EL FRONT TRAER DATOS 
-            Y PARA CREAR LAS MISMAS APIS NOS TOCA HACERLAS DESDE EL BACK.
-        */
- 
-        <>
-            <h1>
-                MUSICA CARGANDO...
-            </h1>
-        </>
-       )
 }
