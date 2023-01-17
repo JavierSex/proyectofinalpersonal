@@ -1,5 +1,7 @@
 import { servicioCancionesTop } from "../services/servicioCanciones"
 import { useState,useEffect } from "react"
+import "./Music.css"
+
 /*
 este es para manejar datos de forma global en el mismo componente en nuestro caso el
 "respuesta" dentro de la funcion anonima
@@ -41,21 +43,40 @@ export function Music(){
     }else{
         return(
             <>
-                <h2>Canciones de la banda:</h2>
-                {
-                    canciones.tracks.map(function(cancion){
-                        console.log(cancion)
-                        return(
-                            <div>
-                                <h1>{cancion.name}</h1>
-                                <audio controls src={cancion.preview_url}></audio>
-                                <img src={cancion.album.images[0].url}></img>
-                            </div>                                                        
-                        )
-                    })
-                }
+                <div className="container">
+                    <h2>Canciones de la banda:</h2>
+                    <div className="row row-cols-1 row-cols-md-5 g-5">
+                        {
+                            canciones.tracks.map(function(cancion){
+                                console.log(cancion)
+                                return(
+                                    <div>    
+                                        <div className="col">
+                                            <div className="card shadow">
+                                                <img src={cancion.album.images[0].url} className="card-img-top"/>
+                                                <div className="card-body">
+                                                  <h1 className="card-title">{cancion.name}</h1>
+                                                  <p className="card-text">Calificacion: {cancion.popularity}% </p>                                          
+                                                  <audio controls src={cancion.preview_url}></audio>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    /*
+                                    <div>
+                                        <h1>{cancion.name}</h1>
+                                        <audio controls src={cancion.preview_url}></audio>
+                                        <img src={cancion.album.images[0].url}></img>
+                                    </div>
+                                    */
+                                )
+                            })
+                        }
+                    </div>
+                </div>                
             </>// interpolar para meter js en el html <></>
         )
-    }
+        
+    }    
 
 }

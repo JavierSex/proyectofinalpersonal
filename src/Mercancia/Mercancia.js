@@ -64,7 +64,7 @@ export function Mercancia(){
         <>
             <h1>{titulo}</h1>
             <div className="container">
-                <div className="row row-cols-1 row-cols-md-3 g-5">
+                <div className="row row-cols-md-3 g-5">
                     
                     {
                         Productos.map(function(producto,id){//producto es una variable auxiliar
@@ -74,19 +74,18 @@ export function Mercancia(){
                                 <div key={id}/**aqui se interpolo lo cual tengo que investigar*/>
                                     <div className="col">
 
-                                        <div className="card h-100 shadow w-100">
-
-                                            <div className="row text-center h-100 w-100 img-fluid">
-                                                <img src={producto.foto} alt="foto" className="h-100 img-fluid w-100 text-center"/>
+                                        <div className="card shadow carta">
+                                            <div className="row">
+                                                <img src={producto.foto} alt="foto" className="fototo"/>
                                             </div>
-                                            <div className="row text-center pt-5">
+                                            <div className="row-col-1">
                                                 <h1>{producto.nombre}</h1>    
                                             </div>
-                                            <div className="row text-center pt-5">
+                                            <div className="row-col-1">
                                                 <h3>${producto.precio}$</h3>
                                             </div>
 
-                                            <div className="row text-center pt-5">
+                                            <div className="row-col-5">
                                                 <button className="btn btn-primary mx-5 my-3" onClick={
                                                         function(){
                                                             detectarEvento(producto)
@@ -95,7 +94,6 @@ export function Mercancia(){
                                                     Ampliar
                                                 </button>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
