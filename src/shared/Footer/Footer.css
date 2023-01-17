@@ -1,7 +1,14 @@
 .fondo{
+    display: grid;
     background-color: #643F87;
     margin-top: 5em;
-    width: 100%;
+    width: 100;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .fuente{

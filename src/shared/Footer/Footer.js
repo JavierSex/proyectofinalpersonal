@@ -15,13 +15,11 @@ export function Footer(){
                         <br/>
                         <h2 className="fw-bold">SOBRE LA BANDA</h2>
                         <h4>Banda de hard rock y metal</h4>
-                    </div>
-                    <div className="col-12 col-4">
                         <i className="bi bi-youtube fuente  me-5"></i>
                         <i className="bi bi-youtube fuente  me-5"></i>
                         <i className="bi bi-twitter fuente me-5"></i>
                         <i className="bi bi-youtube fuente  "></i>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </footer>

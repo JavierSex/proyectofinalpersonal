@@ -19,3 +19,22 @@
     color: aliceblue;   
     width: 25rem;
 }
+
+.cartas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    justify-items: stretch;
+
+    align-self: auto;
+}
+
+.img-noticia{
+    height: 450px;
+}
+
+.seccion{
+    contain-intrinsic-height: auto;
+    background-color: #B3B6B7;
+}
